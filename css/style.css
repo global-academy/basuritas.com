@@ -1,0 +1,8 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+.image.image--small {
+	max-width: 100px;
+	max-height: 100px;
+}

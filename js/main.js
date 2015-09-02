@@ -62,7 +62,7 @@ var crearDenunciaFin = function(textoDenuncia, image) {
 		// Limpiar los campos después de crear una denuncia
 		$('#denuncia_text_input').val('');
 		var fileUploadControl = $('#denuncia_image_input');
-		fileUploadControl.replaceWith(input.val('').clone(true));
+		fileUploadControl.replaceWith($('#denuncia_text_input').val('').clone(true));
 
 		alert('Tu denuncia creada, gracias por ayudarnos a limpiar la ciudad!');
 	});

@@ -2,28 +2,35 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Basuritas</title>
 		<link href='http://fonts .googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600' rel='stylesheet' type='text/css'>
 		<link type="text/css" rel="stylesheet" href="css/normalize.css" />
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<!-- components js -->
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/parse-js-sdk/lib/parse.js"></script>
+		<!-- js -->
+		<script src="js/config.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/main.js"></script>
 	</head>
 	<body>
 		<header>
-	        <div class="contenedor">
-	            <a href="/" class="logo">
-					<img src="img/eco-logo.png" alt="ecologia logo" />
-				</a>
-				<h1><a href="/">trash</a></h1>
+	      <div class="contenedor">
+	            <a href="index.html" class="logo">
+								<img src="img/eco-logo.png" alt="ecologia logo" />
+							</a>
+				<h1><a href="index.html">trash</a></h1>
 	            <nav id='menu-superior'>
 	                <ul>
 	                    <li><a href="/">puntos de reciclaje</a></li>
-	                    <li><a href="/">denuncias</a></li>
+	                    <li><a href="denuncia.html">denuncias</a></li>
 	                    <li><a href="/">informacion</a></li>
 	                    <li><a href="/">contacto</a></li>
 	                </ul>
 	            </nav>
-			</div>
+						</div>
     	</header>
 
 	<div class="contenedor">
@@ -61,28 +68,34 @@
 	<section class="information">
 		<ul class="information__list">
 			<li class="information__item">
-				<article class="reciclaje">
-					<h3 class="reciclaje__title">Reducir</h3>
-					<figure class="reciclaje__figure">
-						<img src="img/reducir-2.png" alt="bota reciclada" />
-					</figure>
-				</article>
+				<a href="#" class="information__link">
+					<article class="reciclaje">
+						<h3 class="reciclaje__title">Reducir</h3>
+						<figure class="reciclaje__figure">
+							<img src="img/reducir-2.png" alt="bota reciclada" />
+						</figure>
+					</article>
+				</a>
 			</li>
 			<li class="information__item">
-				<article class="reciclaje">
-					<h3 class="reciclaje__title">Reciclar</h3>
-					<figure class="reciclaje__figure">
-						<img src="img/reciclar-2.png" alt="bota reciclada" />
-					</figure>
-				</article>
+				<a href="#" class="information__link">
+					<article class="reciclaje">
+						<h3 class="reciclaje__title">Reciclar</h3>
+						<figure class="reciclaje__figure">
+							<img src="img/reciclar-2.png" alt="bota reciclada" />
+						</figure>
+					</article>
+				</a>
 			</li>
 			<li class="information__item">
-				<article class="reciclaje">
-					<h3 class="reciclaje__title">Reutilizar</h3>
-					<figure class="reciclaje__figure">
-						<img src="img/reutilizar-2.png" alt="bota reciclada" />
-					</figure>
-				</article>
+				<a href="#" class="information__link">
+					<article class="reciclaje">
+						<h3 class="reciclaje__title">Reutilizar</h3>
+						<figure class="reciclaje__figure">
+							<img src="img/reutilizar-2.png" alt="bota reciclada" />
+						</figure>
+					</article>
+				</a>
 			</li>
 		</ul>
 
@@ -91,20 +104,26 @@
 	<!--video-->
 	<section class="video-information">
 		<h2 class="video-information__title">Contaminación y Conciencia</h2>
-		<ul class="video-information__list">
-			<li class="video-information__item">
-				<div class="audiovisual">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/L-SAy2FA6bw?list=PLzQBUKVDwrjpg0kmAhXs7AW7DwSSaeZrK" frameborder="0" allowfullscreen>
-					</iframe>
-				</div>
-			</li>
-			<li class="video-information__item">
-				<div class="audiovisual">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/L-SAy2FA6bw?list=PLzQBUKVDwrjpg0kmAhXs7AW7DwSSaeZrK" frameborder="0" allowfullscreen>
-					</iframe>
-				</div>
-			</li>
-		</ul>
+			<ul class="video-information__list">
+				<li class="video-information__item">
+					<div class="audiovisual">
+						<iframe width="280" height="150" src="https://www.youtube.com/embed/YZh5ypLjpO0" frameborder="0" allowfullscreen>
+						</iframe>
+					</div>
+				</li>
+				<li class="video-information__item">
+					<div class="audiovisual">
+						<iframe width="280" height="150" src="https://www.youtube.com/embed/5L8OBir4qkc" frameborder="0" allowfullscreen>
+						</iframe>
+					</div>
+				</li>
+				<li class="video-information__item">
+					<div class="audiovisual">
+						<iframe width="280" height="150" src="https://www.youtube.com/embed/HvfkaniE3iU" frameborder="0" allowfullscreen>
+						</iframe>
+					</div>
+				</li>
+			</ul>
 	</section>
 
 	<!--tips e informacion-->
@@ -156,8 +175,22 @@
 		</div>
 	</section>
 	</div>
+
+	<section class="form">
+		<div class="complaint-form">
+			<form onsubmit="crearDenuncia(); return false;" method="POST">
+				<h3 class="complaint-form__title">Reportar denuncia</h3>
+				<label class="complaint-form__label-title"for="denuncia_text_input">Descripción</label>
+				<input type="text" name="denuncia_text" id="denuncia_text_input" value=""><br><br>
+				<label for="denuncia_image_input">Foto</label>
+				<input type="file" name="denuncia_image" id="denuncia_image_input"><br><br>
+			</form>
+		</div>
+
+	</section>
+
 	<footer>
         <p>Proyecto Basurita - Global Shapers</p>
-    </footer>
+  </footer>
 	</body>
 </html>

@@ -295,6 +295,60 @@ label .complaint-form__label-title{
 	width: 20em;
 }
 
+/*contacto.html*/
+/*formulario*/
+.contacto-block{
+	width: 27em;
+  margin: 5em auto;
+  padding: 1.5em;
+  background-color: #ECECEC;
+}
+.contacto h2 {
+	text-align: center;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #143570;
+}
+.contacto input{
+	width: 100%;
+	margin-bottom: 0.5em;
+	text-align: left;
+}
+.contacto textarea{
+	width: 100%;
+	height: 200px;
+}
+.contacto button{
+	width: 30%;
+	margin: 0;
+	padding: 0.5em;
+	background-color: #143570;
+	color: white;
+	border-radius: 0.3em;
+	text-align: center;
+}
+
+/*reducir.html*/
+/*content*/
+.recycle{
+	width: 40em;
+  margin: 5em auto;
+  padding: 1.5em;
+  background-color: #ECECEC;
+}
+
+.recycle__title{
+ text-align: center;
+ font-weight: 400;
+ text-transform: uppercase;
+ color: #143570;
+}
+
+.recycle__img{
+	text-align: center;
+}
+
+/*pie de pagina*/
 footer{
 	background-color: #0B486B;
 	clear: both;

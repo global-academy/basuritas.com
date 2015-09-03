@@ -6,7 +6,7 @@ html{
 body{
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	background-color: #C2D597;
+	background: url('../img/main_bg.jpg') #C2D597;
 	height: 100%;
 
 }
@@ -24,7 +24,7 @@ body{
 
 /*cabecera*/
 header{
-	background-color: #0B486B;
+	background-color: green;
 
 }
 
@@ -86,12 +86,12 @@ header #menu-superior ul li a{
 	display: block;
 	color: white;
 	padding: 1em;
-	transition: 0.5s all ease;
+	/*transition: 0.5s all ease;*/
 }
 
 header #menu-superior ul li a:hover{
-	background-color: #79BD9A;
-	color: white;
+	/*background-color: #79BD9A;*/
+	/*color: white;*/
 }
 /*main content*/
 .main-content{
@@ -375,7 +375,7 @@ label .complaint-form__label-title{
 
 /*pie de pagina*/
 footer{
-	background-color: #0B486B;
+	background-color: green;
 	clear: both;
 	padding: 2em;
 	height: 50px;

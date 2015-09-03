@@ -1,49 +1,163 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-
-	<title>Basuritas.com</title>
-
-	<link href="css/style.css" rel="stylesheet">
-
-	<!-- components js -->
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/parse-js-sdk/lib/parse.js"></script>
-
-
-
-	<!-- js -->
-	<script src="js/config.js"></script>
-	<script src="js/common.js"></script>
-	<script src="js/main.js"></script>
-
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Basuritas</title>
+		<link href='http://fonts .googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+		<link type="text/css" rel="stylesheet" href="css/normalize.css" />
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+	</head>
 	<body>
-
 		<header>
-			Cabeza
-		</header>
+	        <div class="contenedor">
+	            <a href="/" class="logo">
+					<img src="img/eco-logo.png" alt="ecologia logo" />
+				</a>
+				<h1><a href="/">trash</a></h1>
+	            <nav id='menu-superior'>
+	                <ul>
+	                    <li><a href="/">puntos de reciclaje</a></li>
+	                    <li><a href="/">denuncias</a></li>
+	                    <li><a href="/">informacion</a></li>
+	                    <li><a href="/">contacto</a></li>
+	                </ul>
+	            </nav>
+			</div>
+    	</header>
 
-		<section>
-			<h1>Título</h1>
-
-			<form onsubmit="crearDenuncia(); return false;" method="POST">
-				<h3>Nueva denuncia</h3>
-
-				<label for="denuncia_text_input">Descripción</label>
-				<input type="text" name="denuncia_text" id="denuncia_text_input" value=""><br>
-
-				<label for="denuncia_image_input">Foto</label>
-				<input type="file" name="denuncia_image" id="denuncia_image_input">
-
-			</form>
-
+	<div class="contenedor">
+	<!--ubicacion y noticias-->
+		<section class="main-content">
+			<ul class="main-content__list">
+				<li class="main-content__item">
+					<!--mapa-->
+					<div class="mapa">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d44338.06205195533!2d-66.16589751587985!3d-17.392454893329884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbo!4v1441060547105" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+						</iframe>
+					</div>
+				</li>
+				<li class="main-content__item">
+					<!--noticias-->
+					<article class="news">
+						<a href="#" class="news__link">
+							<figure class="news__figure">
+								<img src="img/noticias.png" alt="ciudad contaminada" />
+							</figure>
+							<div class="news__description">
+								<h3 class="news__title">Autismo y Contaminacion</h3>
+								<p class="news__text">
+									No es la primera vez que un estudio encuentra un vínculo entre la
+									contaminación del aire y un mayor riesgo de autismo...
+								</p>
+							</div>
+						</a>
+					</article>
+				</li>
+			</ul>
 		</section>
 
-		<footer>
-			Pie
-		</footer>
+	<!--reducir reciclar y reutilizar-->
+	<section class="information">
+		<ul class="information__list">
+			<li class="information__item">
+				<article class="reciclaje">
+					<h3 class="reciclaje__title">Reducir</h3>
+					<figure class="reciclaje__figure">
+						<img src="img/reducir-2.png" alt="bota reciclada" />
+					</figure>
+				</article>
+			</li>
+			<li class="information__item">
+				<article class="reciclaje">
+					<h3 class="reciclaje__title">Reciclar</h3>
+					<figure class="reciclaje__figure">
+						<img src="img/reciclar-2.png" alt="bota reciclada" />
+					</figure>
+				</article>
+			</li>
+			<li class="information__item">
+				<article class="reciclaje">
+					<h3 class="reciclaje__title">Reutilizar</h3>
+					<figure class="reciclaje__figure">
+						<img src="img/reutilizar-2.png" alt="bota reciclada" />
+					</figure>
+				</article>
+			</li>
+		</ul>
 
+
+	</section>
+	<!--video-->
+	<section class="video-information">
+		<h2 class="video-information__title">Contaminación y Conciencia</h2>
+		<ul class="video-information__list">
+			<li class="video-information__item">
+				<div class="audiovisual">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/L-SAy2FA6bw?list=PLzQBUKVDwrjpg0kmAhXs7AW7DwSSaeZrK" frameborder="0" allowfullscreen>
+					</iframe>
+				</div>
+			</li>
+			<li class="video-information__item">
+				<div class="audiovisual">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/L-SAy2FA6bw?list=PLzQBUKVDwrjpg0kmAhXs7AW7DwSSaeZrK" frameborder="0" allowfullscreen>
+					</iframe>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<!--tips e informacion-->
+	<section>
+		<div class="info-adicional">
+			<h2>tips para reciclar en casa</h2>
+			<ul class="info-adicional__list">
+				<li class="info-adicional__elemento">
+					<a href="#"class="tip__link">
+						<article class="tip__article">
+							<figure class="tip__img">
+								<img src="img/bota.jpg" alt="bota reciclada" />
+							</figure>
+							<h3>Colores y Naturaleza</h3>
+						</article>
+					</a>
+				</li>
+				<li class="info-adicional__elemento">
+					<a href="#"class="tip__link">
+						<article class="tip__article">
+							<figure class="tip__img">
+								<img src="img/botella.jpg" alt="botella reciclada" />
+							</figure>
+							<h3>Cultivando Especies</h3>
+						</article>
+					</a>
+				</li>
+				<li class="info-adicional__elemento">
+					<a href="#"class="tip__link">
+						<article class="tip__article">
+							<figure class="tip__img">
+								<img src="img/silla.jpg" alt="silla reciclada" />
+							</figure>
+							<h3>Creatividad y Uso</h3>
+						</article>
+					</a>
+				</li>
+				<li class="info-adicional__elemento">
+					<a href="#"class="tip__link">
+						<article class="tip__article">
+							<figure class="tip__img">
+								<img src="img/contenedor.jpg" alt="contenedor reciclaje" />
+							</figure>
+							<h3>Clasificando Desechos</h3>
+						</article>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	</div>
+	<footer>
+        <p>Proyecto Basurita - Global Shapers</p>
+    </footer>
 	</body>
 </html>

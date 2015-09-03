@@ -1,8 +1,280 @@
-body {
-	font-family: Arial, sans-serif;
+/*styles*/
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background-color: #C2D597;
+
 }
 
 .image.image--small {
-	max-width: 100px;
-	max-height: 100px;
+ max-width: 100px;
+ max-height: 100px;
+}
+
+.contenedor{
+	max-width: 95em;
+	margin: 0 auto;
+}
+
+/*cabecera*/
+header{
+	background-color: #0B486B;
+}
+
+header:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+
+header h1{
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0.3em;
+	float: left;
+	line-height: 2em;
+	margin-left: -105px;
+	font-size: 2em;
+}
+
+header h1 a{
+	text-decoration: none;
+	color: #CFF09E;
+}
+
+header .logo{
+	float: left;
+}
+
+header .logo img{
+	width: 43%;
+}
+
+header #menu-superior{
+	float: right;
+	line-height: 2.5em;
+	padding: 0 1em;
+}
+
+header #menu-superior a{
+	text-decoration: none;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+header #menu-superior ul{
+	margin: 0;
+	padding: 0;
+}
+
+header #menu-superior ul li{
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+header #menu-superior ul li a{
+	text-decoration: none;
+	display: block;
+	color: white;
+	padding: 1em;
+	transition: 0.5s all ease;
+}
+
+header #menu-superior ul li a:hover{
+	background-color: #79BD9A;
+	color: white;
+}
+/*main content*/
+.main-content{
+	padding: 3em 0;
+}
+
+.main-content__list{
+	margin: 0;
+	padding: 0 2.5em;
+}
+
+.main-content__item{
+	display: inline-block;
+	margin: 0 1em;
+}
+
+/*mapa*/
+.mapa{
+
+}
+
+/*noticias*/
+.news{
+	width: 41em;
+	height: 6em;
+	padding: 1.3em;
+	background-color: #ECECEC;
+}
+
+.news .news__link{
+	text-decoration: none;
+	color: black;
+}
+
+.news .news__figure{
+	float: left;
+	margin: 0;
+}
+
+.news .news__figure img{
+	width: 10em;
+}
+
+.news .news__description{
+	float: right;
+	width: 30em;
+	margin-top: 24px;
+}
+
+.news .news__title{
+	margin: 0;
+}
+
+.news .news__text{
+	margin: 0;
+}
+
+/*reducir reciclar y reutilizar*/
+.info-adicional__list{
+	font-size: 0;
+	text-align: center;
+}
+
+.info-adicional__list > li{
+	display: inline-block;
+	width: 20%;
+	font-size: 1rem;
+	padding: 1.3em;
+}
+
+.info-adicional__list > li:hover{
+	background-color: #ECECEC;
+}
+
+/*reducir reciclar y reutilizar*/
+.information{
+}
+
+.information__list{
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+
+.information__item{
+	display: inline-block;
+	width: 20%;
+	font-size: 1rem;
+	padding: 1.3em;
+}
+
+.reciclaje{
+	text-align: center;
+}
+
+.reciclaje .reciclaje__title{
+	text-align: center;
+	color: #143570;
+	font-size: 2em;
+	margin: 0.5em;
+}
+
+.reciclaje .reciclaje__figure{
+	margin: 0;
+}
+
+.reciclaje img{
+	width: 50%;
+}
+
+/*video*/
+.video-information__title{
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0.5em;
+	color: #143570;
+	font-size: 2em;
+}
+
+.video-information{
+    padding: 2em 7em;
+}
+
+.video-information__list{
+	padding: 0;
+	font-size: 0;
+}
+
+.video-information__item{
+	display: inline-block;
+	font-size: 1rem;
+}
+
+.audiovisual{
+	background-color: #ECECEC;
+	padding: 2em;
+}
+
+/*tips*/
+.info-adicional{
+	margin: 0;
+}
+
+.info-adicional h2{
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0.5em;
+	color: #143570;
+	font-size: 2em;
+}
+
+.info-adicional__list{
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+
+.info-adicional__elemento{
+	display: inline-block;
+	font-size: 1rem;
+}
+
+.tip__link{
+	text-decoration: none;
+	color: #143570;
+}
+
+.tip__img{
+	margin: 0;
+}
+
+.tip__img img{
+	width: 100%;
+}
+
+.tip__article h3{
+	font-size: 1.5em;
+	font-weight: 600;
+ 	margin: 0.1em;
+	text-align: center;
+}
+
+footer{
+	background-color: #0B486B;
+	clear: both;
+	padding: 2.5em;
+}
+
+footer p{
+	color: white;
+	text-align: center;
+	margin: 0;
+	font-size: 1.3em;
 }
